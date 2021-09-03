@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 15px;
+   scroll-behavior: smooth;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0;
+
+}
+.navbar::before{
+
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     z-index: -1;
+}
+
+.logo{
+    margin: 10px 34px;
+}
+.logo img{
+    border-radius: 100%;
+    margin: 3px 6px;
+    width: 60%;
+}
+
+.navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight:700;
+}
+
+.navbar ul li a{
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    
+}
+
+.navbar ul li a:hover{
+    color: black;
+    background-color: #fff;
+}
+
+/* home section */
+
+
+#home{
+    display: flex;
+    height: 550px;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+   
+}
+#home::before{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 720px;
+    background-image: url(../img/bg1.jpg);
+   top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+    opacity: 0.89;
+
+
+}
+.top{
+   text-align: center;
+    width: 50%;
+}
+
+#home h1{
+    color:white;
+    font-size: 4rem;
+     font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:#dfdfdf;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-top: 1rem;
+}
+
+/* services starts */
+
+/* #services-container{
+    margin-top: 10%;
+    
+} */
+
+#services-container .services{
+ 
+    width: 100%;
+    display: flex;
+    
+}
+
+.services .box{
+    width: 33%;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2% 3%;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.services .box img{ 
+    
+  height: 160px;
+   margin: 0 auto;
+   display: block;
+
+ }
+
+ .services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding-top: 5vh;
+   
+   
+}
+
+.center{
+    text-align: center;
+}
+
+/* client section */
+
+#client-section{
+    position: relative;
+    margin-top: 3%;
+}
+#client-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    background-image: url(../img/bg.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    
+}
+.client{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 5%;
+    
+}
+.client img{
+    height: 124px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+   
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 10% 10% 10%;
+}
+
+.contact-box input,.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+.contact-box form{
+    width: 40%;
+}
+
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+ 
+ }
+
+ footer{
+    background: black;
+    color: white;
+    padding: 1% 0;
+}
+
+@media only screen and (max-width:1170px){
+
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul li a{
+        font-size: 1.2rem;
+        padding: 0px 9px;
+       padding-bottom: 8px;
+        
+    }
+
+    #home{
+        height: 370px; 
+        padding: 3px 28px;
+       
+    }
+
+    #home h1{
+      
+        font-size: 3rem;
+        
+    }
+    
+    #home::before{
+        height:550px;
+       
+    }
+    
+    #home p{
+        font-size:1rem;
+    }
+
+    .services{
+        flex-direction: column;
+    }
+    .services .box{
+        width: 100%;
+        padding: 14px;
+        margin: 2px 0px; 
+        margin-bottom: 20px;
+       
+    }
+
+    .client{
+        flex-wrap: wrap;
+    }
+   
+    
+    /* Contact us section */
+    .contact-box form{
+        width:80%;
+    }
+    /* Footer */
+    
+    /* Utility classes */
+  
+    .btn{
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    .top{
+         width: 100%;
+     }
+
+}
+
+
